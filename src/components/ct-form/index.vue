@@ -56,7 +56,7 @@
 
 <script>
 export default {
-  name: "CTForm",
+  name: "ct-form",
   data() {
     return {
       form: {
@@ -79,8 +79,8 @@ export default {
 };
 </script>
 
-<style lang="sass" scoped>
+<style lang="scss" scoped>
 .ct-form-item {
-  width: 160px
+  width: 160px;
 }
 </style>
