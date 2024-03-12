@@ -56,7 +56,7 @@
 
 <script>
 export default {
-  name: "ct-form",
+  name: "CTForm",
   data() {
     return {
       form: {
@@ -79,8 +79,10 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="less" scoped>
+@primary-color: #333;
 .ct-form-item {
   width: 160px;
+  background-color: @primary-color;
 }
 </style>

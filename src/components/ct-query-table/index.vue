@@ -17,4 +17,8 @@ export default {
 };
 </script>
 
-<style lang="sass" scoped></style>
+<style lang="scss" scoped>
+div {
+  background-color: $main-color;
+}
+</style>
