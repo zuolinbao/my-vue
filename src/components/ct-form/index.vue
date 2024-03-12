@@ -80,9 +80,8 @@ export default {
 </script>
 
 <style lang="less" scoped>
-@primary-color: #333;
 .ct-form-item {
   width: 160px;
-  background-color: @primary-color;
+  background-color: @main-color;
 }
 </style>

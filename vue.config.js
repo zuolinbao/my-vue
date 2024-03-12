@@ -2,6 +2,19 @@ const { defineConfig } = require('@vue/cli-service')
 const path = require('path');
 module.exports = defineConfig({
   transpileDependencies: true,
+  css: {
+    loaderOptions: {
+      scss: {
+        additionalData: `@import "@s/main.scss";`
+      },
+      sass: {
+        additionalData: `@import "@s/main.scss";` 
+      },
+      less: {
+        additionalData: `@import "@s/main.less";`
+      }
+    }
+  },
   configureWebpack: {
     resolve: {
       alias: {
@@ -26,14 +39,5 @@ module.exports = defineConfig({
     //   ]
     // },
   },
-  css: {
-    loaderOptions: {
-      scss: {
-        additionalData: `@import "@s/common.scss";` // 路径根据你的项目结构调整
-      },
-      sass: {
-        additionalData: `@import "@s/common.scss";` // 路径根据你的项目结构调整
-      }
-    }
-  },
+
 })
